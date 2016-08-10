@@ -1,6 +1,6 @@
 // Module Configuration Format
-// ["module", "functionFile", "functionPrefix"]
+// ["module", "functionFile", "functionPrefix", execute]
 
 DD_Modules = DD_Modules + [
-	["core", "testing", "DD"]
+	["core", "testing", "DD", true]
 ];

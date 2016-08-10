@@ -3,14 +3,22 @@
 
 _showActiveJob = "";
 _activeModules = [
-	"core"
+	"core",
+	"init"
 ];
 
 DD_Modules = [];
 
 {
-	call compile preprocessFile format["functions\%1\module.sqf", (_x)];
-	call compile preprocessFile format["functions\%1\vars.sqf", (_x)];
+	switch (_x) do {
+		case ("core"): {
+			call compile preprocessFile format["functions\%1\module.sqf", (_x)];
+			call compile preprocessFile format["functions\%1\vars.sqf", (_x)];
+		};
+		case ("init"): {
+		  call compile preprocessFile format["functions\%1\init.sqf", (_x)];
+		};
+	};
 }forEach _activeModules;
 
 {
@@ -22,4 +30,3 @@ DD_Modules = [];
 		};
 	', _x select 2, _x select 1, _x select 0, _x select 3];
 }forEach DD_Modules;
-
