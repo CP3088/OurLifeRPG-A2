@@ -4,7 +4,8 @@
 _showActiveJob = "";
 _activeModules = [
 	"init",
-	"core"
+	"core",
+	"inventory"
 ];
 
 DD_Modules = [];
