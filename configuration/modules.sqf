@@ -11,12 +11,12 @@ DD_Modules = [];
 
 {
 	switch (_x) do {
-		case ("core"): {
+		case ("init"): {
+			call compile preprocessFile format["functions\%1\init.sqf", (_x)];
+		};
+		default {
 			call compile preprocessFile format["functions\%1\module.sqf", (_x)];
 			call compile preprocessFile format["functions\%1\vars.sqf", (_x)];
-		};
-		case ("init"): {
-		  call compile preprocessFile format["functions\%1\init.sqf", (_x)];
 		};
 	};
 }forEach _activeModules;
