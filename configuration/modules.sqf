@@ -5,6 +5,8 @@ _showActiveJob = "";
 _activeModules = [
 	"init",
 	"core",
+	"events",
+	"admin",
 	"inventory"
 ];
 

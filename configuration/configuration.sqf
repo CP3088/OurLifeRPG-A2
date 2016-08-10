@@ -1,12 +1,16 @@
+/************************ Balca Debug ************************/
+
+[] call compile preprocessFileLineNumbers "addons\proving_Ground\init.sqf";
+
+
+/************************ Master Array ************************/
+
 #include "MA_Items.sqf";
 #include "MA_Vehicles.sqf";
 #include "MA_Weapons.sqf";
 
-
-
-
 DD_Inventory = [];
-DD_maxWeight = 100;
+DD_maxWeight = 60;
 
 DD_MasterArray = DD_MasterArray_Items+DD_MasterArray_Vehicles+DD_MasterArray_Weapons;
 

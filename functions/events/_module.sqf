@@ -1,12 +1,12 @@
 // Module Configuration Format
 // ["module", "functionFile", "functionPrefix", execute]
 
-switch (playerSide) do {
-  	case (Civ): {
+/*switch (playerSide) do {
+  	case (Civ): {*/
 			DD_Modules = DD_Modules + [
 				["events", "Civ_KeyEvents", "OL", false],
 				["events", "Civ_KeyPress",  "OL", false]
-			];
+			];/*
   	};
 		case (West): {
 			DD_Modules = DD_Modules + [

@@ -38,7 +38,7 @@ fnc_KeyPress_6 = {
 	if(dialog)exitwith{closeDialog 0;};
 	if(!INV_shortcuts)exitwith{};
 	if(isstunned) exitwith {player groupchat "You are stunned!"};
-	[] execVM "8675309.sqf";
+	[] call OL_Admin_ShowMenu;
 };
 
 fnc_KeyPress_7 = {
