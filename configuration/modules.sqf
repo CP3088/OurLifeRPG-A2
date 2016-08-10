@@ -15,7 +15,11 @@ DD_Modules = [];
 
 {
 	call compile format['
-		%1_%3_%2 = compile preProcessFile "functions\%3\%3_%2.sqf";
-	', _x select 2, _x select 1, _x select 0];
+		if(%4)then{
+			%1_%3_%2 = compile preProcessFile "functions\%3\%3_%2.sqf";
+		}else{
+			execVM "functions\%3\%3_%2.sqf";
+		};
+	', _x select 2, _x select 1, _x select 0, _x select 3];
 }forEach DD_Modules;
 
