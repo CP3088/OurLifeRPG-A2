@@ -1,1 +1,3 @@
-player globalChat "Lets do this nigga";
+call compile preprocessFile "configuration\configuration.sqf";
+call compile preprocessFile "configuration\modules.sqf";
+

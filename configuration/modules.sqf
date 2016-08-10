@@ -1,0 +1,21 @@
+// Modular Folder Configuration Format:
+// "moduleFolder"
+
+_showActiveJob = "";
+_activeModules = [
+	"core"
+];
+
+DD_Modules = [];
+
+{
+	call compile preprocessFile format["functions\%1\module.sqf", (_x)];
+	call compile preprocessFile format["functions\%1\vars.sqf", (_x)];
+}forEach _activeModules;
+
+{
+	call compile format['
+		%1_%3_%2 = compile preProcessFile "functions\%3\%3_%2.sqf";
+	', _x select 2, _x select 1, _x select 0];
+}forEach DD_Modules;
+
