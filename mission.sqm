@@ -1,0 +1,167 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cmr_cicada",
+		"cacharacters2"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"cmr_cicada"
+	};
+	randomSeed=1945753;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		month=8;
+		day=6;
+		hour=6;
+		minute=20;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6134.9683,32,4367.7539};
+					id=0;
+					side="CIV";
+					vehicle="Citizen1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="civ1";
+				};
+			};
+		};
+		class Item1
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6135.5259,32,4367.7139};
+					id=1;
+					side="CIV";
+					vehicle="Citizen1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ2";
+				};
+			};
+		};
+		class Item2
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6136.1304,32,4367.7139};
+					id=2;
+					side="CIV";
+					vehicle="Citizen1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ3";
+				};
+			};
+		};
+		class Item3
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6136.6543,32,4367.7139};
+					id=3;
+					side="CIV";
+					vehicle="Citizen1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ4";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"cmr_cicada"
+	};
+	addOnsAuto[]=
+	{
+		"cmr_cicada"
+	};
+	randomSeed=8438793;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		month=8;
+		day=6;
+		hour=6;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"cmr_cicada"
+	};
+	addOnsAuto[]=
+	{
+		"cmr_cicada"
+	};
+	randomSeed=13465063;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		month=8;
+		day=6;
+		hour=6;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"cmr_cicada"
+	};
+	addOnsAuto[]=
+	{
+		"cmr_cicada"
+	};
+	randomSeed=1548218;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		month=8;
+		day=6;
+		hour=6;
+		minute=20;
+	};
+};
