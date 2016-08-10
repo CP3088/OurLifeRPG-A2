@@ -3,8 +3,8 @@
 
 _showActiveJob = "";
 _activeModules = [
-	"core",
-	"init"
+	"init",
+	"core"
 ];
 
 DD_Modules = [];
@@ -15,8 +15,8 @@ DD_Modules = [];
 			call compile preprocessFile format["functions\%1\init.sqf", (_x)];
 		};
 		default {
-			call compile preprocessFile format["functions\%1\module.sqf", (_x)];
-			call compile preprocessFile format["functions\%1\vars.sqf", (_x)];
+			call compile preprocessFile format["functions\%1\_module.sqf", (_x)];
+			call compile preprocessFile format["functions\%1\_vars.sqf", (_x)];
 		};
 	};
 }forEach _activeModules;
