@@ -1,3 +1,16 @@
+/*---------------------------------------------------------------------------
+FUNCTION:
+	Calculate Weight.
+
+PARAMS:
+	None
+
+DESCRIPTION:
+	Returns the overall carryweight the player has.
+
+AUTHOR:
+	DEADdem
+---------------------------------------------------------------------------*/
 private["_finalWeight"];
 _finalWeight = 0;
 

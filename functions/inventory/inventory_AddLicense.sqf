@@ -1,3 +1,17 @@
+/*---------------------------------------------------------------------------
+FUNCTION:
+	Add License
+
+PARAMS:
+	_this select 0 - License key which will be added to the license array.
+	_this select 1 - Take money from user's cash and reject if not enough? <default: false>
+
+DESCRIPTION:
+	Adds a license, and is able to charge someone for purchasing the license.
+
+AUTHOR:
+	DEADdem
+---------------------------------------------------------------------------*/
 private["_license", "_charge"];
 _license = _this select 0;
 _charge = _this select 1;

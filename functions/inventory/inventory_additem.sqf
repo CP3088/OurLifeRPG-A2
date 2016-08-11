@@ -1,3 +1,19 @@
+/*---------------------------------------------------------------------------
+FUNCTION:
+	Add Item
+
+PARAMS:
+	_this select 0 - Item Key from master array which will be added to inventory.
+	_this select 1 - Amount to add.
+	_this select 2 - Clean array before processing? <default: false>
+	_this select 3 - Add item regardless of weight limit being breached? <default: false>
+
+DESCRIPTION:
+	Processes an item being added/removed from the inventory.
+
+AUTHOR:
+	DEADdem
+---------------------------------------------------------------------------*/
 private["_item", "_amount", "_itemWeight", "_clean", "_ignoreweightlimit"];
 _item = _this select 0;
 _amount = _this select 1;

@@ -1,3 +1,17 @@
+/*---------------------------------------------------------------------------
+FUNCTION:
+	Inventory Info
+
+PARAMS:
+	_this select 0 - Item key from master array.
+	_this select 1 - Specific information requested.
+
+DESCRIPTION:
+	Gets information from an entry in the master array. 
+
+AUTHOR:
+	DEADdem
+---------------------------------------------------------------------------*/
 private["_item", "_info", "_return"];
 
 _item = _this select 0;

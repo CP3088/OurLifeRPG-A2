@@ -1,3 +1,16 @@
+/*---------------------------------------------------------------------------
+FUNCTION:
+	Get Amount
+
+PARAMS:
+	_this select 0 - Item key from master array to check in the inventory.
+
+DESCRIPTION:
+	Returns the amount of a certain item in the player's inventory.
+
+AUTHOR:
+	DEADdem
+---------------------------------------------------------------------------*/
 private["_item", "_return"];
 _item = _this select 0;
 
