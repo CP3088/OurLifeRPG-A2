@@ -20,9 +20,10 @@ _amount = _this select 1;
 _clean = _this select 2;
 _ignoreweightlimit = _this select 3;
 
+
 if(!isnil "_clean")then{
 	{
-		if(_x select 1 < 0)then{
+		if(_x select 1 <= 0)then{
 			DD_Inventory set[_forEachIndex, -1];
 		};
 		if(typeName _x != "ARRAY")then{

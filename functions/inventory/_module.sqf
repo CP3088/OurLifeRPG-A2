@@ -8,5 +8,10 @@ DD_Modules = DD_Modules + [
 	["inventory", "calculateweight", "DD", true],
 	["inventory", "addlicense", "DD", true],
 	["inventory", "licenseinfo", "DD", true],
-	["inventory", "licenseactions", "DD", false]
+	["inventory", "licenseactions", "DD", false],
+	["inventory", "menu", "DD", true],
+	["inventory", "useitem", "DD", true],
+	["inventory", "dropitem", "DD", true],
+	["inventory", "pickupitem", "DD", true],
+	["inventory", "giveitem", "DD", true]
 ];

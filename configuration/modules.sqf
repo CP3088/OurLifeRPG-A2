@@ -7,7 +7,8 @@ _activeModules = [
 	"core",
 	"events",
 	"admin",
-	"inventory"
+	"inventory",
+	"mp"
 ];
 
 DD_Modules = [];
@@ -23,7 +24,10 @@ DD_Modules = [];
 		};
 	};
 }forEach _activeModules;
-
+if(isNil "DD_Modules")exitWith{
+	server globalChat "Really, Really bad error!";
+	systemChat "One of the modules is breaking the module builder. Fix the array in all of em.";
+};
 {
 	call compile format['
 		if(%4)then{

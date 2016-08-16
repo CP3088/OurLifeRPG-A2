@@ -2,7 +2,7 @@
 // ["module", "functionFile", "functionPrefix", execute]
 
 DD_Modules = DD_Modules + [
-	["core", "testing", "DD", true],
-	["core", "animate", "DD", true],
-	["core", "code", "DD", true]
+	["mp", "Execute", "DD", true],
+	["mp", "Call", "DD", true],
+	["mp", "Say", "DD", true]
 ];

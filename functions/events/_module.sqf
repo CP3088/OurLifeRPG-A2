@@ -5,7 +5,8 @@
   	case (Civ): {*/
 			DD_Modules = DD_Modules + [
 				["events", "Civ_KeyEvents", "OL", false],
-				["events", "Civ_KeyPress",  "OL", false]
+				["events", "Civ_KeyPress",  "OL", false],
+				["events", "PublicVariable",  "OL", false]
 			];/*
   	};
 		case (West): {

@@ -9,11 +9,15 @@
 #include "MA_Weapons.sqf"
 #include "Config_Licenses.sqf"
 
-
+DD_ActionLock = false;
 
 DD_Inventory = [];
 DD_maxWeight = 60;
 DD_MyLicenses = [];
+
+DD_CivilianArray = [civ1, civ2, civ3, civ4];
+DD_CopArray = [];
+DD_EMSArray = [];
 
 
 DD_MasterArray = DD_MasterArray_Items+DD_MasterArray_Vehicles+DD_MasterArray_Weapons;
