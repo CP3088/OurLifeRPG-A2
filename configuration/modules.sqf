@@ -8,7 +8,8 @@ _activeModules = [
 	"events",
 	"admin",
 	"inventory",
-	"mp"
+	"mp",
+	"cloud"
 ];
 
 DD_Modules = [];
